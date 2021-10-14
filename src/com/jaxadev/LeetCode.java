@@ -72,7 +72,7 @@ Memory Usage: 43.4 MB, less than 47.98% of Java online submissions for Count Pri
     }
 
     public int romanToInt(String S) {
-        int ans = 0, num = 0;
+        int result = 0, num = 0;
         for (int i = S.length() - 1; i >= 0; i--) {
             switch (S.charAt(i)) {
                 case 'I' -> num = 1;
@@ -83,15 +83,48 @@ Memory Usage: 43.4 MB, less than 47.98% of Java online submissions for Count Pri
                 case 'D' -> num = 500;
                 case 'M' -> num = 1000;
             }
-            if (4 * num < ans) ans -= num;
-            else ans += num;
+            if (4 * num < result) result -= num;
+            else result += num;
         }
-        return ans;
+        return result;
 
         /*
         Runtime: 5 ms, faster than 71.51% of Java online submissions for Roman to Integer.
 Memory Usage: 41.6 MB, less than 33.86% of Java online submissions for Roman to Integer.
          */
+    }
+
+    public boolean isPowerOfTwo(int n) {
+
+        if (n == 0) return false;
+
+//        while (n % 2 == 0) {
+//
+//            n = n / 2;
+//
+//        }
+
+        return ((long) n & ((long) n - 1)) == 0;
+
+    }
+
+    public boolean isPowerOfThree(int n) {
+
+        if (n == 0) return false;
+
+        //        while (n % 3 == 0) {
+//
+//            n = n / 3;
+//
+//        }
+
+        return n > 0 && 1162261467 % n == 0;
+
+        /*
+        Runtime: 10 ms, faster than 99.98% of Java online submissions for Power of Three.
+Memory Usage: 38.8 MB, less than 66.19% of Java online submissions for Power of Three.
+         */
+
     }
 
 

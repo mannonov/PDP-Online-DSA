@@ -15,7 +15,12 @@ public class Main {
 
 //        System.out.println("leetCode.countPrimes(10) = " + leetCode.countPrimes(10));
 
-        System.out.println("leetCode.romanToInt(\"III\") = " + leetCode.romanToInt("III"));
+//        System.out.println("leetCode.romanToInt(\"III\") = " + leetCode.romanToInt("III"));
+
+
+//        System.out.println("leetCode.isPowerOfTwo(256) = " + leetCode.isPowerOfTwo(256));
+
+        System.out.println("leetCode.isPowerOfThree(27) = " + leetCode.isPowerOfThree(55));
 
     }
 
