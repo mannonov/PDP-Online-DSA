@@ -11,7 +11,9 @@ public class Main {
 
 //        System.out.println("leetCode.isPalindrome(121) = " + leetCode.isPalindrome(121));
 
-        System.out.println("leetCode.fib(50) = " + leetCode.fib(2));
+//        System.out.println("leetCode.fib(50) = " + leetCode.fib(2));
+
+        System.out.println("leetCode.countPrimes(10) = " + leetCode.countPrimes(10));
 
     }
 

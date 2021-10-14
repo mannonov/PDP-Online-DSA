@@ -1,5 +1,7 @@
 package com.jaxadev;
 
+import java.util.Arrays;
+
 public class LeetCode {
 
     public boolean isPalindrome(int x) {
@@ -39,5 +41,36 @@ Memory Usage: 37.7 MB, less than 17.22% of Java online submissions for Fibonacci
      */
     }
 
+    public int countPrimes(int n) {
+        if (n <= 1) {
+            return 0;
+        }
+        boolean[] primes = new boolean[n];
+        Arrays.fill(primes, true);
+
+        for (int i = 2; i * i< n; i++) {
+            System.out.println("i = " + i);
+            if (!primes[i]) {
+                continue;
+            }
+            for (int j = i * i; j < n; j += i) {
+                primes[j] = false;
+                System.out.println("j = " + j);
+            }
+        }
+        int count = 0;
+        for (int i = 2; i < primes.length; i++) {
+            count += primes[i] ? 1 : 0;
+        }
+        return count;
+
+        /*
+        Runtime: 101 ms, faster than 36.19% of Java online submissions for Count Primes.
+Memory Usage: 43.4 MB, less than 47.98% of Java online submissions for Count Primes.
+         */
+
+    }
+
 
 }
+
