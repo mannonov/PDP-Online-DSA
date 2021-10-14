@@ -48,7 +48,7 @@ Memory Usage: 37.7 MB, less than 17.22% of Java online submissions for Fibonacci
         boolean[] primes = new boolean[n];
         Arrays.fill(primes, true);
 
-        for (int i = 2; i * i< n; i++) {
+        for (int i = 2; i * i < n; i++) {
             System.out.println("i = " + i);
             if (!primes[i]) {
                 continue;
@@ -69,6 +69,29 @@ Memory Usage: 37.7 MB, less than 17.22% of Java online submissions for Fibonacci
 Memory Usage: 43.4 MB, less than 47.98% of Java online submissions for Count Primes.
          */
 
+    }
+
+    public int romanToInt(String S) {
+        int ans = 0, num = 0;
+        for (int i = S.length() - 1; i >= 0; i--) {
+            switch (S.charAt(i)) {
+                case 'I' -> num = 1;
+                case 'V' -> num = 5;
+                case 'X' -> num = 10;
+                case 'L' -> num = 50;
+                case 'C' -> num = 100;
+                case 'D' -> num = 500;
+                case 'M' -> num = 1000;
+            }
+            if (4 * num < ans) ans -= num;
+            else ans += num;
+        }
+        return ans;
+
+        /*
+        Runtime: 5 ms, faster than 71.51% of Java online submissions for Roman to Integer.
+Memory Usage: 41.6 MB, less than 33.86% of Java online submissions for Roman to Integer.
+         */
     }
 
 
