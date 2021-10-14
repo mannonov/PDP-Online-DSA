@@ -9,8 +9,9 @@ public class Main {
 
         LeetCode leetCode = new LeetCode();
 
-        System.out.println("leetCode.isPalindrome(121) = " + leetCode.isPalindrome(121));
+//        System.out.println("leetCode.isPalindrome(121) = " + leetCode.isPalindrome(121));
 
+        System.out.println("leetCode.fib(50) = " + leetCode.fib(2));
 
     }
 
