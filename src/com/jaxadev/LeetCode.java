@@ -127,6 +127,15 @@ Memory Usage: 38.8 MB, less than 66.19% of Java online submissions for Power of 
 
     }
 
+    public boolean isPowerOfFour(int n) {
+        return (n > 0) && ((n & (n - 1)) == 0) && ((n % 3) == 1);
+        /*
+        Runtime: 1 ms, faster than 99.63% of Java online submissions for Power of Four.
+Memory Usage: 38.2 MB, less than 20.38% of Java online submissions for Power of Four.
+         */
+
+    }
+
 
 }
 
