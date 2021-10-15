@@ -9,6 +9,8 @@ public class Main {
 
         LeetCode leetCode = new LeetCode();
 
+        BlaBLa blaBLa = new BlaBLa();
+
 //        System.out.println("leetCode.isPalindrome(121) = " + leetCode.isPalindrome(121));
 
 //        System.out.println("leetCode.fib(50) = " + leetCode.fib(2));
@@ -30,7 +32,20 @@ public class Main {
 
 //        System.out.println("leetCode.isUgly(6) = " + leetCode.isUgly(6));
 
-        System.out.println("leetCode.addDigits(101) = " + leetCode.addDigits(101));
+//        System.out.println("leetCode.addDigits(101) = " + leetCode.addDigits(101));
+
+//        System.out.println("blaBLa.isAnagram(\"Jahon\",\"nohaj\") = " + blaBLa.isAnagram("Jahon", "nohaJ"));
+
+//        System.out.println("leetCode.isAnagram(\"joja\",\"ajoj\") = " + leetCode.isAnagram("joja", "ajoj"));
+
+        char[] chars = new char[10];
+        chars[0] = 'h';
+        chars[1] = 'e';
+        chars[2] = 'l';
+        chars[3] = 'l';
+        chars[4] = 'o';
+
+        leetCode.reverseString(chars);
 
     }
 

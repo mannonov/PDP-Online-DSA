@@ -1,5 +1,6 @@
 package com.jaxadev;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LeetCode {
@@ -235,6 +236,54 @@ Memory Usage: 38.5 MB, less than 7.44% of Java online submissions for Add Digits
  */
     }
 
+    public boolean isAnagram(String s, String t) {
+
+        if (s.length() != t.length()) return false;
+
+        int[] alphabet = new int[26];
+
+        for (int i = 0; i < s.length(); i++) {
+            alphabet[s.charAt(i) - 'a']++;
+        }
+
+        for (int i = 0; i < t.length(); i++) {
+            alphabet[t.charAt(i) - 'a']--;
+        }
+
+        for (int i : alphabet) {
+            if (i != 0) return false;
+        }
+
+        return true;
+
+        /*
+        Runtime: 3 ms, faster than 81.04% of Java online submissions for Valid Anagram.
+Memory Usage: 40.4 MB, less than 31.15% of Java online submissions for Valid Anagram.
+         */
+
+
+    }
+
+    public void reverseString(char[] s) {
+
+        int start = 0;
+        int end = s.length - 1;
+
+        while (start < end) {
+
+            char ch = s[start];
+            s[start] = s[end];
+            s[end] = ch;
+            start++;
+            end--;
+        }
+
+        /*
+        Runtime: 1 ms, faster than 95.95% of Java online submissions for Reverse String.
+Memory Usage: 52.7 MB, less than 19.22% of Java online submissions for Reverse String.
+         */
+
+    }
 
 }
 
