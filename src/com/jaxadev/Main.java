@@ -26,7 +26,9 @@ public class Main {
 
 //        System.out.println("leetCode.isPerfectSquare(25) = " + leetCode.isPerfectSquare(25));
 
-        System.out.println("leetCode.checkPerfectNumber(28) = " + leetCode.checkPerfectNumber(28));
+//        System.out.println("leetCode.checkPerfectNumber(28) = " + leetCode.checkPerfectNumber(28));
+
+        System.out.println("leetCode.isUgly(6) = " + leetCode.isUgly(6));
     }
 
 }

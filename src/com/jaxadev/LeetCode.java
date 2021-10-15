@@ -198,6 +198,26 @@ Memory Usage: 37.6 MB, less than 22.56% of Java online submissions for Perfect N
 
     }
 
+    public boolean isUgly(int num) {
+
+        if (num == 0) return false;
+        if (num == 1) return true;
+
+        while (num != 1) {
+            if (num % 2 == 0) num /= 2;
+            else if (num % 3 == 0) num /= 3;
+            else if (num % 5 == 0) num /= 5;
+            else return false;
+        }
+        return true;
+
+        /*
+        Runtime: 1 ms, faster than 100.00% of Java online submissions for Ugly Number.
+Memory Usage: 36.2 MB, less than 54.29% of Java online submissions for Ugly Number.
+         */
+
+    }
+
 
 }
 
