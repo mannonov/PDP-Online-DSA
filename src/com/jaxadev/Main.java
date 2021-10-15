@@ -47,7 +47,9 @@ public class Main {
 //
 //        leetCode.reverseString(chars);
 
-        System.out.println("leetCode.rotateString(\"abcde\", \"abced\") = " + leetCode.rotateString("abcde", "abced"));
+//        System.out.println("leetCode.rotateString(\"abcde\", \"abced\") = " + leetCode.rotateString("abcde", "abced"));
+
+        System.out.println("leetCode.buddyStrings(\"jo'ja\",\"jo'ja\") = " + leetCode.buddyStrings("jo'ja", "jo'ja"));
 
     }
 

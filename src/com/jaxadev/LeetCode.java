@@ -1,7 +1,6 @@
 package com.jaxadev;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class LeetCode {
 
@@ -306,12 +305,60 @@ Memory Usage: 52.7 MB, less than 19.22% of Java online submissions for Reverse S
             }
         }
         return true;
-    }
 
-    /*
+        /*
     Runtime: 0 ms, faster than 100.00% of Java online submissions for Rotate String.
 Memory Usage: 38.4 MB, less than 42.88% of Java online submissions for Rotate String.
      */
 
+    }
+
+    public boolean buddyStrings(String s, String goal) {
+//
+//        long resultS = 0;
+//        long resultGoal = 0;
+//
+//
+//        for (char ch : s.toCharArray()) {
+//            resultS += (int)ch;
+//        }
+//
+//        for (char ch : goal.toCharArray()) {
+//            resultGoal += (int)ch;
+//        }
+//
+//        return resultGoal == resultS ;
+
+        if (s.length() != goal.length()) return false;
+        Set<Character> set = new HashSet();
+        for (char ch : s.toCharArray()) {
+            set.add(ch);
+        }
+        if (s.equals(goal)) {
+            return set.size() < s.length();
+        }
+        int index1 = -1;
+        int index2 = -1;
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) != goal.charAt(i)) {
+                count++;
+                if (index1 == -1) index1 = i;
+                else if (index2 == -1) index2 = i;
+                if (count > 2) return false;
+            }
+        }
+        if (count == 2) {
+            return s.charAt(index1) == goal.charAt(index2) && s.charAt(index2) == goal.charAt(index1);
+        } else {
+            return false;
+        }
+
+        /*
+        Runtime: 3 ms, faster than 61.23% of Java online submissions for Buddy Strings.
+Memory Usage: 39.1 MB, less than 56.32% of Java online submissions for Buddy Strings.
+         */
+
+    }
 }
 
