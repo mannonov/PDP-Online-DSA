@@ -38,14 +38,16 @@ public class Main {
 
 //        System.out.println("leetCode.isAnagram(\"joja\",\"ajoj\") = " + leetCode.isAnagram("joja", "ajoj"));
 
-        char[] chars = new char[10];
-        chars[0] = 'h';
-        chars[1] = 'e';
-        chars[2] = 'l';
-        chars[3] = 'l';
-        chars[4] = 'o';
+//        char[] chars = new char[10];
+//        chars[0] = 'h';
+//        chars[1] = 'e';
+//        chars[2] = 'l';
+//        chars[3] = 'l';
+//        chars[4] = 'o';
+//
+//        leetCode.reverseString(chars);
 
-        leetCode.reverseString(chars);
+        System.out.println("leetCode.rotateString(\"abcde\", \"abced\") = " + leetCode.rotateString("abcde", "abced"));
 
     }
 

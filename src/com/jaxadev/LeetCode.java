@@ -285,5 +285,33 @@ Memory Usage: 52.7 MB, less than 19.22% of Java online submissions for Reverse S
 
     }
 
+    public boolean rotateString(String s, String goal) {
+
+        if (s.length() != goal.length()) {
+            return false;
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            if (rotateString(s, goal, i)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean rotateString(String s, String goal, int rotation) {
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) != goal.charAt((i + rotation) % goal.length())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /*
+    Runtime: 0 ms, faster than 100.00% of Java online submissions for Rotate String.
+Memory Usage: 38.4 MB, less than 42.88% of Java online submissions for Rotate String.
+     */
+
 }
 
