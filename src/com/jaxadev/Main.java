@@ -24,7 +24,9 @@ public class Main {
 
 //        System.out.println("leetCode.isPowerOfFour(16) = " + leetCode.isPowerOfFour(16));
 
-        System.out.println("leetCode.isPerfectSquare(25) = " + leetCode.isPerfectSquare(25));
+//        System.out.println("leetCode.isPerfectSquare(25) = " + leetCode.isPerfectSquare(25));
+
+        System.out.println("leetCode.checkPerfectNumber(28) = " + leetCode.checkPerfectNumber(28));
     }
 
 }
