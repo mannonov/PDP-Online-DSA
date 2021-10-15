@@ -136,6 +136,45 @@ Memory Usage: 38.2 MB, less than 20.38% of Java online submissions for Power of 
 
     }
 
+    public boolean isPerfectSquare(int num) {
+
+//        int i = 1;
+//
+//        while (num > 0) {
+//            num = num - i;
+//            i = i + 2;
+//        }
+//
+//        return num == 0;
+
+//            long x = num;
+//
+//            while (x * x > num) {
+//                x = (x + num / x) / 2;
+//            }
+//
+//            return x * x == num;
+
+        int low = 1, high = num;
+        while (low <= high) {
+            long mid = (low + high) >>> 1;
+            if (mid * mid == num) {
+                return true;
+            } else if (mid * mid < num) {
+                low = (int) mid + 1;
+            } else {
+                high = (int) mid - 1;
+            }
+        }
+        return false;
+
+        /*
+        Runtime: 0 ms, faster than 100.00% of Java online submissions for Valid Perfect Square.
+Memory Usage: 35.4 MB, less than 93.29% of Java online submissions for Valid Perfect Square.
+         */
+
+    }
+
 
 }
 

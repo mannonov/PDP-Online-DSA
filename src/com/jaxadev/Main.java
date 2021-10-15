@@ -22,7 +22,9 @@ public class Main {
 
 //        System.out.println("leetCode.isPowerOfThree(27) = " + leetCode.isPowerOfThree(55));
 
-        System.out.println("leetCode.isPowerOfFour(16) = " + leetCode.isPowerOfFour(16));
+//        System.out.println("leetCode.isPowerOfFour(16) = " + leetCode.isPowerOfFour(16));
+
+        System.out.println("leetCode.isPerfectSquare(25) = " + leetCode.isPerfectSquare(25));
     }
 
 }
