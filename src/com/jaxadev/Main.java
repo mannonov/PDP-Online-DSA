@@ -28,7 +28,12 @@ public class Main {
 
 //        System.out.println("leetCode.checkPerfectNumber(28) = " + leetCode.checkPerfectNumber(28));
 
-        System.out.println("leetCode.isUgly(6) = " + leetCode.isUgly(6));
+//        System.out.println("leetCode.isUgly(6) = " + leetCode.isUgly(6));
+
+        System.out.println("leetCode.addDigits(101) = " + leetCode.addDigits(101));
+
     }
+
+
 
 }

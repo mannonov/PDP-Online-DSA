@@ -218,6 +218,23 @@ Memory Usage: 36.2 MB, less than 54.29% of Java online submissions for Ugly Numb
 
     }
 
+    public int addDigits(int num) {
+        /*
+        100a+10b+c, then (100a+10b+c)%9=(a+99a+b+9b+c)%9=(a+b+c)%9
+         */
+
+        if (num == 0) return 0;
+
+        if (num % 9 == 0) return 9;
+
+        else return num % 9;
+
+/*
+Runtime: 1 ms, faster than 100.00% of Java online submissions for Add Digits.
+Memory Usage: 38.5 MB, less than 7.44% of Java online submissions for Add Digits.
+ */
+    }
+
 
 }
 
