@@ -53,9 +53,11 @@ public class Main {
 
 //        System.out.println("leetCode.isValid(\"()\") = " + leetCode.isValid("()"));
 
-        System.out.println("leetCode.isPalindrome(\"Marge, let's \\\"[went].\\\" I await {news} telegram.\") = " + leetCode.isPalindrome("Marge, let's \"[went].\" I await {news} telegram."));
+//        System.out.println("leetCode.isPalindrome(\"Marge, let's \\\"[went].\\\" I await {news} telegram.\") = " + leetCode.isPalindrome("Marge, let's \"[went].\" I await {news} telegram."));
 
-        System.out.println("leetCode.countSegments(\"                \") = " + leetCode.countSegments("                "));
+//        System.out.println("leetCode.countSegments(\"Hello, my name is John\") = " + leetCode.countSegments("Hello, my name is John"));
+
+        System.out.println("leetCode.multiply(\"10\",\"20\") = " + leetCode.multiply("10", "20"));
 
     }
 

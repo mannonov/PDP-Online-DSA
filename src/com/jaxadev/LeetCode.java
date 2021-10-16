@@ -436,6 +436,45 @@ Memory Usage: 38.8 MB, less than 13.70% of Java online submissions for Number of
 
     }
 
+    public String multiply(String num1, String num2) {
+
+        if ("0".equals(num1) || "0".equals(num2)) {
+            return "0";
+        }
+
+        int[] number = new int[num1.length() + num2.length() - 1];
+
+        for (int i = 0; i < num1.length(); i++) {
+            for (int j = 0; j < num2.length(); j++) {
+                System.out.println("(num1.charAt(i) - '0') = " + (num1.charAt(i) - '0'));
+                System.out.println("(num2.charAt(j) - '0') = " + (num2.charAt(j) - '0'));
+                number[i + j] += (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
+                System.out.println("number[i + j] = " + number[i + j]);
+            }
+        }
+
+        for (int i = number.length - 1; i > 0; i--) {
+            System.out.println("number[i - 1] = " + number[i - 1]);
+            number[i - 1] += number[i] / 10;
+            System.out.println("number[i - 1] = " + number[i - 1]);
+            number[i] %= 10;
+            System.out.println("number[i] = " + number[i]);
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (int i : number) {
+            sb.append(i);
+        }
+
+        return sb.toString();
+
+        /*
+        Runtime: 5 ms, faster than 62.53% of Java online submissions for Multiply Strings.
+Memory Usage: 39.7 MB, less than 27.60% of Java online submissions for Multiply Strings.
+         */
+
+    }
+
 
 }
 
