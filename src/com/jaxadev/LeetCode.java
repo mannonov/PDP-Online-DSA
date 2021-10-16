@@ -390,6 +390,26 @@ Memory Usage: 39 MB, less than 10.77% of Java online submissions for Valid Paren
 
     }
 
+    public boolean isPalindrome(String s) {
+
+        StringBuilder newString = new StringBuilder();
+
+        s = s.toLowerCase();
+
+        for (char ch : s.toCharArray()) {
+
+            if (97 <= (int) ch && (int) ch <= 122 || 48 <= (int)ch && (int)ch <= 57) {
+
+                newString.append(ch);
+            }
+        }
+
+        String nextS = new StringBuilder(newString).reverse().toString();
+
+        return nextS.equals(newString.toString());
+
+    }
+
 
 }
 

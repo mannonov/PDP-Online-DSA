@@ -51,7 +51,9 @@ public class Main {
 
 //        System.out.println("leetCode.buddyStrings(\"jo'ja\",\"jo'ja\") = " + leetCode.buddyStrings("jo'ja", "jo'ja"));
 
-        System.out.println("leetCode.isValid(\"()\") = " + leetCode.isValid("()"));
+//        System.out.println("leetCode.isValid(\"()\") = " + leetCode.isValid("()"));
+
+        System.out.println("leetCode.isPalindrome(\"Marge, let's \\\"[went].\\\" I await {news} telegram.\") = " + leetCode.isPalindrome("Marge, let's \"[went].\" I await {news} telegram."));
 
     }
 
