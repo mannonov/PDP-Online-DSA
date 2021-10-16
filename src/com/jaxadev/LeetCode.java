@@ -398,7 +398,7 @@ Memory Usage: 39 MB, less than 10.77% of Java online submissions for Valid Paren
 
         for (char ch : s.toCharArray()) {
 
-            if (97 <= (int) ch && (int) ch <= 122 || 48 <= (int)ch && (int)ch <= 57) {
+            if (97 <= (int) ch && (int) ch <= 122 || 48 <= (int) ch && (int) ch <= 57) {
 
                 newString.append(ch);
             }
@@ -407,6 +407,32 @@ Memory Usage: 39 MB, less than 10.77% of Java online submissions for Valid Paren
         String nextS = new StringBuilder(newString).reverse().toString();
 
         return nextS.equals(newString.toString());
+
+        /*
+Runtime: 4 ms, faster than 63.63% of Java online submissions for Valid Palindrome.
+Memory Usage: 38.6 MB, less than 97.56% of Java online submissions for Valid Palindrome.
+         */
+
+    }
+
+    public int countSegments(String s) {
+
+        int result = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            if ((int) s.charAt(i) != 32 && (i == 0 || (int) s.charAt(i - 1) == 32)) {
+                result++;
+            }
+
+        }
+
+        return result;
+
+        /*
+        Runtime: 0 ms, faster than 100.00% of Java online submissions for Number of Segments in a String.
+Memory Usage: 38.8 MB, less than 13.70% of Java online submissions for Number of Segments in a String.
+         */
 
     }
 

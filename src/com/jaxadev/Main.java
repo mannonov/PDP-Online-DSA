@@ -55,6 +55,8 @@ public class Main {
 
         System.out.println("leetCode.isPalindrome(\"Marge, let's \\\"[went].\\\" I await {news} telegram.\") = " + leetCode.isPalindrome("Marge, let's \"[went].\" I await {news} telegram."));
 
+        System.out.println("leetCode.countSegments(\"                \") = " + leetCode.countSegments("                "));
+
     }
 
 
