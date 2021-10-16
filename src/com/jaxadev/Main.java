@@ -12,7 +12,7 @@ public class Main {
 
         LeetCode leetCode = new LeetCode();
 
-        BlaBLa blaBLa = new BlaBLa();
+        BlaBla blaBLa = new BlaBla();
 
 //        System.out.println("leetCode.isPalindrome(121) = " + leetCode.isPalindrome(121));
 
@@ -76,6 +76,7 @@ public class Main {
 
         System.out.println("leetCode.intersection(array1,array2) = " + Arrays.toString(leetCode.intersection(array1, array2)));
 
+        System.out.println("leetCode.sortedSquares(array1) = " + Arrays.toString(leetCode.sortedSquares(array1)));
 
     }
 

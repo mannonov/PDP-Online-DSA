@@ -2,7 +2,7 @@ package com.jaxadev
 
 import java.util.*
 
-class BlaBLa {
+class BlaBla {
 
     fun countPrimes(n: Int): Int {
         val seen = BooleanArray(n)

@@ -1,5 +1,6 @@
 package com.jaxadev;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class LeetCode {
@@ -539,6 +540,49 @@ Memory Usage: 39 MB, less than 76.48% of Java online submissions for Single Numb
         /*
         Runtime: 2 ms, faster than 96.33% of Java online submissions for Intersection of Two Arrays.
 Memory Usage: 39.4 MB, less than 46.24% of Java online submissions for Intersection of Two Arrays.
+         */
+
+    }
+
+    public int[] sortedSquares(int[] nums) {
+
+//        for (int i = 0; i < nums.length; i++) {
+//
+//            nums[i] = nums[i] * nums[i];
+//
+//        }
+//
+//        int temp = 0;
+//
+//        for (int i = 0; i <nums.length; i++) {
+//            for (int j = i+1; j <nums.length; j++) {
+//                if(nums[i] >nums[j]) {      //swap elements if not in order
+//                    temp = nums[i];
+//                    nums[i] = nums[j];
+//                    nums[j] = temp;
+//                }
+//            }
+//        }
+//
+//        return nums;
+
+
+        int[] result = new int[nums.length];
+        int i = 0, j = nums.length - 1, k = nums.length - 1;
+
+        while (k >= 0) {
+            if (Math.abs(nums[i]) > Math.abs(nums[j])) {
+                result[k--] = nums[i] * nums[i++];
+            } else {
+                result[k--] = nums[j] * nums[j--];
+            }
+        }
+
+        return result;
+
+        /*
+        Runtime: 1 ms, faster than 100.00% of Java online submissions for Squares of a Sorted Array.
+Memory Usage: 52.9 MB, less than 35.95% of Java online submissions for Squares of a Sorted Array.
          */
 
     }
