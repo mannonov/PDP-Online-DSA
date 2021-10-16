@@ -475,6 +475,73 @@ Memory Usage: 39.7 MB, less than 27.60% of Java online submissions for Multiply 
 
     }
 
+    public int singleNumber(int[] nums) {
+
+        int result = 0;
+
+        for (int num : nums) {
+
+            result ^= num;
+
+        }
+
+        return result;
+
+        /*
+        Runtime: 1 ms, faster than 94.58% of Java online submissions for Single Number.
+Memory Usage: 39 MB, less than 76.48% of Java online submissions for Single Number.
+         */
+
+    }
+
+    public int[] intersection(int[] nums1, int[] nums2) {
+
+        Set<Integer> set = new HashSet<>();
+
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+
+        int i = 0;
+        int j = 0;
+
+        while (i < nums1.length && j < nums2.length) {
+
+            if (nums1[i] < nums2[j]) {
+
+                i++;
+
+            } else if (nums1[i] > nums2[j]) {
+
+                j++;
+
+            } else {
+
+                set.add(nums1[i]);
+
+                i++;
+                j++;
+
+            }
+        }
+
+        int[] result = new int[set.size()];
+
+        int k = 0;
+
+        for (Integer num : set) {
+
+            result[k++] = num;
+
+        }
+
+        return result;
+
+        /*
+        Runtime: 2 ms, faster than 96.33% of Java online submissions for Intersection of Two Arrays.
+Memory Usage: 39.4 MB, less than 46.24% of Java online submissions for Intersection of Two Arrays.
+         */
+
+    }
 
 }
 

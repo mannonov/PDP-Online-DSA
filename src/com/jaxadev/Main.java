@@ -1,4 +1,7 @@
 package com.jaxadev;
+
+import java.util.Arrays;
+
 /*
 Created 14.10.2021 by Jahongir Mannonov
  */
@@ -57,7 +60,22 @@ public class Main {
 
 //        System.out.println("leetCode.countSegments(\"Hello, my name is John\") = " + leetCode.countSegments("Hello, my name is John"));
 
-        System.out.println("leetCode.multiply(\"10\",\"20\") = " + leetCode.multiply("10", "20"));
+//        System.out.println("leetCode.multiply(\"10\",\"20\") = " + leetCode.multiply("10", "20"));
+
+        int[] array2 = new int[3];
+        array2[0] = 4;
+        array2[1] = 4;
+        array2[2] = 2;
+
+        int[] array1 = new int[3];
+        array2[0] = 5;
+        array2[1] = 6;
+        array2[2] = 2;
+
+        System.out.println("leetCode.singleNumber(array) = " + leetCode.singleNumber(array2));
+
+        System.out.println("leetCode.intersection(array1,array2) = " + Arrays.toString(leetCode.intersection(array1, array2)));
+
 
     }
 
