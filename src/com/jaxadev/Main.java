@@ -78,6 +78,8 @@ public class Main {
 
         System.out.println("leetCode.sortedSquares(array1) = " + Arrays.toString(leetCode.sortedSquares(array1)));
 
+        System.out.println("leetCode.xorOperation(10,2) = " + leetCode.xorOperation(10, 2));
+
     }
 
 

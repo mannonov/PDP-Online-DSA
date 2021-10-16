@@ -587,5 +587,25 @@ Memory Usage: 52.9 MB, less than 35.95% of Java online submissions for Squares o
 
     }
 
+    public int xorOperation(int n, int start) {
+
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = start + (2 * i);
+        }
+
+        int result = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            result ^= arr[i];
+        }
+        return result;
+
+        /*
+        Runtime: 0 ms, faster than 100.00% of Java online submissions for XOR Operation in an Array.
+Memory Usage: 35.7 MB, less than 64.76% of Java online submissions for XOR Operation in an Array
+         */
+
+    }
+
 }
 
