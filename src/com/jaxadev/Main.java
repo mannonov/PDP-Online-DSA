@@ -49,7 +49,9 @@ public class Main {
 
 //        System.out.println("leetCode.rotateString(\"abcde\", \"abced\") = " + leetCode.rotateString("abcde", "abced"));
 
-        System.out.println("leetCode.buddyStrings(\"jo'ja\",\"jo'ja\") = " + leetCode.buddyStrings("jo'ja", "jo'ja"));
+//        System.out.println("leetCode.buddyStrings(\"jo'ja\",\"jo'ja\") = " + leetCode.buddyStrings("jo'ja", "jo'ja"));
+
+        System.out.println("leetCode.isValid(\"()\") = " + leetCode.isValid("()"));
 
     }
 
