@@ -62,23 +62,25 @@ public class Main {
 
 //        System.out.println("leetCode.multiply(\"10\",\"20\") = " + leetCode.multiply("10", "20"));
 
-        int[] array2 = new int[3];
-        array2[0] = 4;
-        array2[1] = 4;
-        array2[2] = 2;
+//        int[] array2 = new int[3];
+//        array2[0] = 4;
+//        array2[1] = 4;
+//        array2[2] = 2;
+//
+//        int[] array1 = new int[3];
+//        array2[0] = 5;
+//        array2[1] = 6;
+//        array2[2] = 2;
+//
+//        System.out.println("leetCode.singleNumber(array) = " + leetCode.singleNumber(array2));
+//
+//        System.out.println("leetCode.intersection(array1,array2) = " + Arrays.toString(leetCode.intersection(array1, array2)));
+//
+//        System.out.println("leetCode.sortedSquares(array1) = " + Arrays.toString(leetCode.sortedSquares(array1)));
+//
+//        System.out.println("leetCode.xorOperation(10,2) = " + leetCode.xorOperation(10, 2));
 
-        int[] array1 = new int[3];
-        array2[0] = 5;
-        array2[1] = 6;
-        array2[2] = 2;
-
-        System.out.println("leetCode.singleNumber(array) = " + leetCode.singleNumber(array2));
-
-        System.out.println("leetCode.intersection(array1,array2) = " + Arrays.toString(leetCode.intersection(array1, array2)));
-
-        System.out.println("leetCode.sortedSquares(array1) = " + Arrays.toString(leetCode.sortedSquares(array1)));
-
-        System.out.println("leetCode.xorOperation(10,2) = " + leetCode.xorOperation(10, 2));
+        System.out.println("leetCode.diagonalSum() = " + leetCode.diagonalSum());
 
     }
 

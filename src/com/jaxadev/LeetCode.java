@@ -607,5 +607,19 @@ Memory Usage: 35.7 MB, less than 64.76% of Java online submissions for XOR Opera
 
     }
 
+    public int diagonalSum(int[][] mat) {
+        int n = mat.length, res = 0;
+        for (int i = 0; i < n; i++) {
+            res += mat[i][i]; //Bu yerda har bir index'inchi arrayning arrayIndex'inchidagi elementi dioganal row bo'ladi
+            if (i != n - 1 - i) res += mat[i][n - 1 - i]; //Bu yerda o'sha narsaning chappasini qilamiz
+        }
+        return res;
+
+        /*
+        Runtime: 0 ms, faster than 100.00% of Java online submissions for Matrix Diagonal Sum.
+Memory Usage: 39.4 MB, less than 41.04% of Java online submissions for Matrix Diagonal Sum.
+         */
+    }
+
 }
 
